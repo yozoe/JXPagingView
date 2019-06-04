@@ -70,6 +70,11 @@ open class JXPagingListRefreshView: JXPagingView {
                     currentScrollingListView!.contentOffset = CGPoint.zero;
                     currentScrollingListView!.showsVerticalScrollIndicator = false;
                 }
+                else {
+                    if self.mainTableView.contentOffset.y < 0 {
+                        self.mainTableView.contentOffset.y = 0
+                    }
+                }
             } else {
                 //mainTableView的header刚好消失，固定mainTableView的位置，显示listScrollView的滚动条
                 self.mainTableView.contentOffset = CGPoint(x: 0, y: getMainTableViewMaxContentOffsetY());
