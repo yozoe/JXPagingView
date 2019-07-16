@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
   s.author       = { "pujiaxin33" => "317437084@qq.com" }
   s.platform     = :ios, "8.0"
   s.swift_version = "5.0"
-  s.source       = { :git => "https://github.com/yozoe/PullToRefreshKit.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/yozoe/JXPagingView.git", :tag => "#{s.version}" }
   s.source_files  = "JXPagingView-Swift", "JXPagingView-Swift/**/*.swift"
   s.license      = "MIT"
   s.subspec 'Pager' do |pager|
